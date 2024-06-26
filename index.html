@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+<body>
+    <div class="container" id="page1">
+        <h1>Question 1</h1>
+        <p>Which animal is known as the 'King of the Jungle'?</p>
+        <form id="form1">
+            <input type="radio" name="q1" value="Lion" id="lion">
+            <label for="lion">Lion</label><br>
+            <input type="radio" name="q1" value="Tiger" id="tiger">
+            <label for="tiger">Tiger</label><br>
+            <input type="radio" name="q1" value="Elephant" id="elephant">
+            <label for="elephant">Elephant</label><br>
+            <input type="radio" name="q1" value="Giraffe" id="giraffe">
+            <label for="giraffe">Giraffe</label><br>
+            <button type="button" onclick="nextPage(1)">Submit</button>
+        </form>
+    </div>
+
+    <div class="container hidden" id="page2">
+        <h1>Question 2</h1>
+        <p>Which animal is the largest mammal in the world?</p>
+        <form id="form2">
+            <input type="radio" name="q2" value="Elephant" id="elephant">
+            <label for="elephant">Elephant</label><br>
+            <input type="radio" name="q2" value="Blue Whale" id="bluewhale">
+            <label for="bluewhale">Blue Whale</label><br>
+            <input type="radio" name="q2" value="Giraffe" id="giraffe">
+            <label for="giraffe">Giraffe</label><br>
+            <input type="radio" name="q2" value="Rhino" id="rhino">
+            <label for="rhino">Rhino</label><br>
+            <button type="button" onclick="nextPage(2)">Submit</button>
+        </form>
+    </div>
+
+    <div class="container hidden" id="page3">
+        <h1>Question 3</h1>
+        <p>Which bird is known for its beautiful tail feathers?</p>
+        <form id="form3">
+            <input type="radio" name="q3" value="Peacock" id="peacock">
+            <label for="peacock">Peacock</label><br>
+            <input type="radio" name="q3" value="Eagle" id="eagle">
+            <label for="eagle">Eagle</label><br>
+            <input type="radio" name="q3" value="Sparrow" id="sparrow">
+            <label for="sparrow">Sparrow</label><br>
+            <input type="radio" name="q3" value="Penguin" id="penguin">
+            <label for="penguin">Penguin</label><br>
+            <button type="button" onclick="nextPage(3)">Submit</button>
+        </form>
+    </div>
+
+    <div class="container hidden" id="page4">
+        <h1>Question 4</h1>
+        <p>Who won the FIFA World Cup in 2018?</p>
+        <form id="form4">
+            <input type="radio" name="q4" value="Brazil" id="brazil">
+            <label for="brazil">Brazil</label><br>
+            <input type="radio" name="q4" value="Germany" id="germany">
+            <label for="germany">Germany</label><br>
+            <input type="radio" name="q4" value="France" id="france">
+            <label for="france">France</label><br>
+            <input type="radio" name="q4" value="Argentina" id="argentina">
+            <label for="argentina">Argentina</label><br>
+            <button type="button" onclick="nextPage(4)">Submit</button>
+        </form>
+    </div>
+
+    <div class="container hidden" id="page5">
+        <h1>Question 5</h1>
+        <p>Who was the first president of the United States?</p>
+        <form id="form5">
+            <input type="radio" name="q5" value="George Washington" id="washington">
+            <label for="washington">George Washington</label><br>
+            <input type="radio" name="q5" value="Thomas Jefferson" id="jefferson">
+            <label for="jefferson">Thomas Jefferson</label><br>
+            <input type="radio" name="q5" value="Abraham Lincoln" id="lincoln">
+            <label for="lincoln">Abraham Lincoln</label><br>
+            <input type="radio" name="q5" value="John Adams" id="adams">
+            <label for="adams">John Adams</label><br>
+            <button type="button" onclick="nextPage(5)">Submit</button>
+        </form>
+    </div>
+
+    <div class="container hidden" id="page6">
+        <h1>Question 6</h1>
+        <p>What is the capital of Japan?</p>
+        <form id="form6">
+            <input type="radio" name="q6" value="Tokyo" id="tokyo">
+            <label for="tokyo">Tokyo</label><br>
+            <input type="radio" name="q6" value="Kyoto" id="kyoto">
+            <label for="kyoto">Kyoto</label><br>
+            <input type="radio" name="q6" value="Osaka" id="osaka">
+            <label for="osaka">Osaka</label><br>
+            <input type="radio" name="q6" value="Hiroshima" id="hiroshima">
+            <label for="hiroshima">Hiroshima</label><br>
+            <button type="button" onclick="nextPage(6)">Submit</button>
+        </form>
+    </div>
+
+    <div class="container hidden" id="page7">
+        <h1>Quiz Completed!</h1>
+        <button onclick="showResults()">Show Results</button>
+        <p id="score" class="hidden"></p>
+    </div>
+
+    <script src="Quiz.js"></script>
+</body>
+</html>
